@@ -45,7 +45,6 @@ API desenvolvida em Node.js utilizando TypeScript e seguindo os padrões de cód
 
 ##### Requisitos funcionais
 - Deve ser possível cadastrar a imagem do carro.
-- Deve ser possível listar todos os carros.
 
 ##### Requisitos não funcionais
 - Utilizar o multer para o upload dos arquivos.
