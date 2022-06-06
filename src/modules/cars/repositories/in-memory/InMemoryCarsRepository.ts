@@ -1,3 +1,4 @@
+import { ICreateCarDTO } from "@modules/cars/dto/ICreateCarDTO";
 import { Car } from "@modules/cars/infra/typeorm/entities/Cars";
 
 import { ICarsRepository } from "../ICarsRepository";
@@ -13,6 +14,7 @@ class InMemoryCarsRepository implements ICarsRepository {
     fine_amount,
     name,
     license_plate,
+    id,
   }: ICreateCarDTO): Promise<Car> {
     const car = new Car();
 
@@ -24,6 +26,7 @@ class InMemoryCarsRepository implements ICarsRepository {
       fine_amount,
       name,
       license_plate,
+      id,
     });
     this.cars.push(car);
     return car;
@@ -51,6 +54,10 @@ class InMemoryCarsRepository implements ICarsRepository {
     });
 
     return all;
+  }
+
+  async findById(id: string): Promise<Car> {
+    return this.cars.find((car) => car.id === id);
   }
 }
 
