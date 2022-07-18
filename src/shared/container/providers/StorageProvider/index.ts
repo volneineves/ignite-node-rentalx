@@ -1,9 +1,9 @@
 import { container } from "tsyringe";
 
-import { LocalStorageProvider } from "./implementations/LocalStorageProvider";
-import { IStorageProvider } from "./IStorageProvide";
+import { S3StorageProvider } from "./implementations/S3StorageProvider";
+import { IStorageProvider } from "./IStorageProvider";
 
 container.registerInstance<IStorageProvider>(
-  "StorageProvider",
-  new LocalStorageProvider()
+  "S3StorageProvider",
+  new S3StorageProvider()
 );
