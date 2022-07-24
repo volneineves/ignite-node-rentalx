@@ -1,3 +1,5 @@
+// yarn add @babel/cli @babel/core @babel/node @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env babel-plugin-module-resolver babel-plugin-transform-typescript-metadata @babel/preset-typescript -D -D
+
 module.exports = {
     presets: [
       ["@babel/preset-env", { targets: { node: "current" } }],

@@ -126,10 +126,6 @@ A rota deve receber `file` em binário pelo corpo da requisição contendo linha
 
 A rota deve receber `name` e `description` pelo corpo da requisição e retornar um status `201`.
 
-## Adicionando o Babel na aplicação
-
-yarn add @babel/cli @babel/core @babel/node @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env babel-plugin-module-resolver babel-plugin-transform-typescript-metadata @babel/preset-typescript -D -D
-
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/git/git-scm.com/blob/master/MIT-LICENSE.txt) para mais detalhes.
